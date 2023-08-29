@@ -2,7 +2,7 @@
 # tasks file for vector
 - name: Install Vector
   become: true
-  ansible.builtin.yum:
+  ansible.builtin.apt:
     name: "{{ vector_url }}"
     state: present
   tags:
